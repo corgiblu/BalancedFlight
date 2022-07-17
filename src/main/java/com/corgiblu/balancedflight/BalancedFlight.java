@@ -1,5 +1,6 @@
 package com.corgiblu.balancedflight;
 
+import com.corgiblu.balancedflight.block.ModBlocks;
 import com.corgiblu.balancedflight.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
@@ -32,6 +33,7 @@ public class BalancedFlight
         // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in

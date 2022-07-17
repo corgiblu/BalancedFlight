@@ -1,5 +1,7 @@
 {
   "item.balancedflight.basicring": "Basic Angel Ring",
   "item.balancedflight.diamondring": "Ascended Angel Ring",
-  "item.balancedflight.flightcore": "Flight Core"
+  "item.balancedflight.flightcore": "Flight Core",
+
+  "block.balancedflight.basicflightanchor": "Basic Flight Anchor"
 }
