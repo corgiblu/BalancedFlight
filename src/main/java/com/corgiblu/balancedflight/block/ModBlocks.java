@@ -24,6 +24,18 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
                     .strength(100).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_MISC);
 
+    public static final RegistryObject<Block> GILDEDFLIGHTANCHOR = registerBlock("gildedflightanchor",
+            () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
+                    .strength(100).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_MISC);
+
+    public static final RegistryObject<Block> ASCENDEDFLIGHTANCHOR = registerBlock("ascendedflightanchor",
+            () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
+                    .strength(100).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_MISC);
+
+    public static final RegistryObject<Block> ASCENDEDBLACKSTONE = registerBlock("ascendedblackstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5).requiresCorrectToolForDrops().sound(SoundType.GILDED_BLACKSTONE)), CreativeModeTab.TAB_MISC);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

@@ -3,5 +3,8 @@
   "item.balancedflight.diamondring": "Ascended Angel Ring",
   "item.balancedflight.flightcore": "Flight Core",
 
-  "block.balancedflight.basicflightanchor": "Basic Flight Anchor"
+  "block.balancedflight.basicflightanchor": "Basic Flight Anchor",
+  "block.balancedflight.gildedflightanchor": "Gilded Flight Anchor",
+  "block.balancedflight.ascendedflightanchor": "Ascended Flight Anchor",
+  "block.balancedflight.ascendedblackstone": "Ascended Blackstone"
 }
