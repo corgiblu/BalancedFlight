@@ -1,6 +1,7 @@
 package com.corgiblu.balancedflight.item;
 
 import com.corgiblu.balancedflight.BalancedFlight;
+import com.corgiblu.balancedflight.item.custom.BasicRingItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, BalancedFlight.MOD_ID);
 
     public static final RegistryObject<Item> BASICRING = ITEMS.register("basicring",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BALANCEDFLIGHT_TAB).stacksTo(1)));
+            () -> new BasicRingItem(new Item.Properties().tab(ModCreativeModeTab.BALANCEDFLIGHT_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> DIAMONDRING = ITEMS.register("diamondring",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BALANCEDFLIGHT_TAB).stacksTo(1).fireResistant()));

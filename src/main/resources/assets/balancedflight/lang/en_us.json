@@ -8,5 +8,11 @@
   "block.balancedflight.ascendedflightanchor": "Ascended Flight Anchor",
   "block.balancedflight.ascendedblackstone": "Ascended Blackstone",
 
-  "itemGroup.balancedflighttab": "Balanced Flight"
+  "itemGroup.balancedflighttab": "Balanced Flight",
+
+  "tooltip.balancedflight.basicring.tooltip.description": "§7Cheap ring that allows flight around flight anchors.§r",
+  "tooltip.balancedflight.basicring.tooltip.both": "§7Allows both creative and enhanced Elytra flight.§r",
+  "tooltip.balancedflight.basicring.tooltip.creative": "§7Allows creative flight.§r",
+  "tooltip.balancedflight.basicring.tooltip.elytra": "§7Allows enhanced Elytra flight.§r",
+  "tooltip.balancedflight.basicring.tooltip.overworld": "§4Only works in the overworld.§r"
 }
