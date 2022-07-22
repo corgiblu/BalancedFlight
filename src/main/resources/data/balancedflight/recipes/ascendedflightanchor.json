@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QTQ",
+    "YGY",
+    "QMQ"
+  ],
+  "key": {
+    "Y": {
+      "item": "minecraft:diamond_block"
+    },
+    "G": {
+      "item": "minecraft:feather"
+    },
+    "Q": {
+      "item": "balancedflight:ascendedblackstone"
+    },
+    "T": {
+      "item": "minecraft:emerald_block"
+    },
+    "M": {
+      "item": "balancedflight:gildedflightanchor"
+    }
+  },
+  "result": {
+    "item": "balancedflight:ascendedflightanchor"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "balancedflight:ascendedflightanchor"
+    ]
+  },
+  "criteria": {
+    "gildedflightanchor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "balancedflight:gildedflightanchor"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "balancedflight:ascendedflightanchor"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "gildedflightanchor",
+      "has_the_recipe"
+    ]
+  ]
+}

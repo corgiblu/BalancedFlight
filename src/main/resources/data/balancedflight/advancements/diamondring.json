@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "balancedflight:diamondring"
+    ]
+  },
+  "criteria": {
+    "ring": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "balancedflight:basicring"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "balancedflight:diamondring"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ring",
+      "has_the_recipe"
+    ]
+  ]
+}

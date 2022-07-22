@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "balancedflight:ascendedblackstone"
+    ]
+  },
+  "criteria": {
+    "ring": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "balancedflight:basicring"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "balancedflight:ascendedblackstone"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ring",
+      "has_the_recipe"
+    ]
+  ]
+}

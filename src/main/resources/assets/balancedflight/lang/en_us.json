@@ -6,5 +6,7 @@
   "block.balancedflight.basicflightanchor": "Basic Flight Anchor",
   "block.balancedflight.gildedflightanchor": "Gilded Flight Anchor",
   "block.balancedflight.ascendedflightanchor": "Ascended Flight Anchor",
-  "block.balancedflight.ascendedblackstone": "Ascended Blackstone"
+  "block.balancedflight.ascendedblackstone": "Ascended Blackstone",
+
+  "itemGroup.balancedflighttab": "Balanced Flight"
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BGB",
+    "GDG",
+    "BGB"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "B": {
+      "item": "minecraft:polished_blackstone"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "balancedflight:ascendedblackstone"
+  }
+}

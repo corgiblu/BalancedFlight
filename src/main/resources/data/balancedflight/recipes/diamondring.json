@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "KPK",
+    "PRP",
+    "KPK"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:gold_block"
+    },
+    "R": {
+      "item": "minecraft:elytra"
+    },
+    "K": {
+      "item": "balancedflight:flightcore"
+    }
+  },
+  "result": {
+    "item": "balancedflight:diamondring"
+  }
+}

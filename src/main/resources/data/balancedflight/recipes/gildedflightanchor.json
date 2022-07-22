@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VJV",
+    "SLS",
+    "TZT"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:gold_block"
+    },
+    "V": {
+      "item": "minecraft:polished_blackstone_bricks"
+    },
+    "J": {
+      "item": "minecraft:diamond_block"
+    },
+    "L": {
+      "item": "minecraft:feather"
+    },
+    "Z": {
+      "item": "balancedflight:basicflightanchor"
+    },
+    "T": {
+      "item": "balancedflight:ascendedblackstone"
+    }
+  },
+  "result": {
+    "item": "balancedflight:gildedflightanchor"
+  }
+}
