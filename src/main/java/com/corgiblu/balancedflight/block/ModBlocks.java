@@ -36,32 +36,32 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BASICFLIGHTANCHOR = registerBlock("basicflightanchor",
             () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
-                    .strength(100).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), ModCreativeModeTab.BALANCEDFLIGHT_TAB, "Allows flight in a " + BasicEffectDistance + " block distance.");
+                    .strength(100).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), ModCreativeModeTab.BALANCEDFLIGHT_TAB, "tooltip.balancedflight.flightanchor.tooltip", BasicEffectDistance);
 
     public static final RegistryObject<Block> GILDEDFLIGHTANCHOR = registerBlock("gildedflightanchor",
             () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
-                    .strength(100).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), ModCreativeModeTab.BALANCEDFLIGHT_TAB, "Allows flight in a " + GildedEffectDistance + " block distance.");
+                    .strength(100).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), ModCreativeModeTab.BALANCEDFLIGHT_TAB, "tooltip.balancedflight.flightanchor.tooltip", GildedEffectDistance);
 
     public static final RegistryObject<Block> ASCENDEDFLIGHTANCHOR = registerBlock("ascendedflightanchor",
             () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
-                    .strength(100).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), ModCreativeModeTab.BALANCEDFLIGHT_TAB, "Allows flight in a " + AscendedEffectDistance + " block distance.");
+                    .strength(100).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), ModCreativeModeTab.BALANCEDFLIGHT_TAB, "tooltip.balancedflight.flightanchor.tooltip", AscendedEffectDistance);
 
     public static final RegistryObject<Block> ASCENDEDBLACKSTONE = registerBlock("ascendedblackstone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5).requiresCorrectToolForDrops().sound(SoundType.GILDED_BLACKSTONE)), ModCreativeModeTab.BALANCEDFLIGHT_TAB);
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab, String tooltip) {
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab, String tooltipKey, Double tooltipNumber) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab, tooltip);
+        registerBlockItem(name, toReturn, tab, tooltipKey, tooltipNumber);
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab, String tooltip) {
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab, String tooltipKey, Double tooltipNumber) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)){
             @Override
             public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
                 super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
-                pTooltip.add(new TextComponent(tooltip).withStyle(ChatFormatting.GRAY));
+                pTooltip.add(new TranslatableComponent(tooltipKey, new TextComponent(tooltipNumber.toString()).withStyle(ChatFormatting.WHITE)));
             }
         });
     }

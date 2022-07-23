@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab BALANCEDFLIGHT_TAB = new CreativeModeTab("balancedflighttab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.DIAMONDRING.get());
+            return new ItemStack(ModItems.ASCENDEDRING.get());
         }
     };
 }

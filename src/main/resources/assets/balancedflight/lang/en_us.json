@@ -1,6 +1,6 @@
 {
   "item.balancedflight.basicring": "Basic Angel Ring",
-  "item.balancedflight.diamondring": "Ascended Angel Ring",
+  "item.balancedflight.ascendedring": "Ascended Angel Ring",
   "item.balancedflight.flightcore": "Flight Core",
 
   "block.balancedflight.basicflightanchor": "Basic Flight Anchor",
@@ -11,8 +11,11 @@
   "itemGroup.balancedflighttab": "Balanced Flight",
 
   "tooltip.balancedflight.basicring.tooltip.description": "§7Cheap ring that allows flight around flight anchors.§r",
-  "tooltip.balancedflight.basicring.tooltip.both": "§7Allows both creative and enhanced Elytra flight.§r",
-  "tooltip.balancedflight.basicring.tooltip.creative": "§7Allows creative flight.§r",
-  "tooltip.balancedflight.basicring.tooltip.elytra": "§7Allows enhanced Elytra flight.§r",
-  "tooltip.balancedflight.basicring.tooltip.overworld": "§4Only works in the overworld.§r"
+  "tooltip.balancedflight.ascendedring.tooltip.description": "§6An incredibly dense golden ring. §7Despite its weight, it allows you to fly anywhere.§r",
+  "tooltip.balancedflight.ring.tooltip.both": "§7Allows both creative and enhanced Elytra flight.§r",
+  "tooltip.balancedflight.ring.tooltip.creative": "§7Allows creative flight.§r",
+  "tooltip.balancedflight.ring.tooltip.elytra": "§7Allows enhanced Elytra flight.§r",
+  "tooltip.balancedflight.basicring.tooltip.overworld": "§4Only works in the overworld.§r",
+
+  "tooltip.balancedflight.flightanchor.tooltip": "§7Allows flight in a %1$s §7block distance.§r"
 }
