@@ -42,11 +42,12 @@ public class BasicRingItem extends Item {
         super.inventoryTick(pStack, pLevel, pEntity, pSlotId, pIsSelected);
 
         if (pEntity instanceof Player player) {
-
             player.getAbilities().mayfly = true;
         }
 
     }
+
+
     private void stopFlying(Player player) {
         player.getAbilities().flying = false;
         player.getAbilities().mayfly = false;

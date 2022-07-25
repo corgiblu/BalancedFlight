@@ -36,7 +36,7 @@ public class AscendedRingItem extends Item {
     }
 
     @Override
-    public boolean onBlockStartBreak(ItemStack itemstack, BlockPos pos, Player player) {
-        return super.onBlockStartBreak(itemstack, pos, player);
+    public boolean isFoil(ItemStack pStack) {
+        return super.isFoil(pStack);
     }
 }

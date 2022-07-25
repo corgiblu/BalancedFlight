@@ -33,6 +33,8 @@ public class BalancedFlight
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        MinecraftForge.EVENT_BUS.register(new FlightDeactivation());
+
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BalancedFlightCommonConfig.SPEC, "balancedflight-common.toml");
     }
 
