@@ -2,6 +2,8 @@ package com.corgiblu.balancedflight;
 
 import com.corgiblu.balancedflight.block.ModBlocks;
 import com.corgiblu.balancedflight.config.BalancedFlightCommonConfig;
+import com.corgiblu.balancedflight.events.TextureStitch;
+import com.corgiblu.balancedflight.events.FlightDeactivation;
 import com.corgiblu.balancedflight.imc.IMCSender;
 import com.corgiblu.balancedflight.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -35,6 +37,7 @@ public class BalancedFlight
         MinecraftForge.EVENT_BUS.register(this);
 
         MinecraftForge.EVENT_BUS.register(new FlightDeactivation());
+        MinecraftForge.EVENT_BUS.register(new TextureStitch());
 
         IMCSender.sendImc();
 

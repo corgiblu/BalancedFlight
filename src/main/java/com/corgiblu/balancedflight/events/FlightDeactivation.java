@@ -1,4 +1,4 @@
-package com.corgiblu.balancedflight;
+package com.corgiblu.balancedflight.events;
 
 import com.corgiblu.balancedflight.item.custom.AscendedRingItem;
 import com.corgiblu.balancedflight.item.custom.BasicRingItem;
