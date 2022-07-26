@@ -46,11 +46,4 @@ public class BasicRingItem extends Item {
         }
 
     }
-
-
-    private void stopFlying(Player player) {
-        player.getAbilities().flying = false;
-        player.getAbilities().mayfly = false;
-        player.onUpdateAbilities();
-    }
 }

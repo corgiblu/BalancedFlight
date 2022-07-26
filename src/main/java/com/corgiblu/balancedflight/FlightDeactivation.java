@@ -1,24 +1,22 @@
 package com.corgiblu.balancedflight;
 
-import com.mojang.logging.LogUtils;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import com.corgiblu.balancedflight.item.custom.AscendedRingItem;
+import com.corgiblu.balancedflight.item.custom.BasicRingItem;
+import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.registries.ForgeRegistries;
-import org.slf4j.Logger;
 
 public class FlightDeactivation {
 
-    private static final Logger LOGGER = LogUtils.getLogger();
-
     @SubscribeEvent
     void StopFlight(LivingEquipmentChangeEvent event) {
-        //LOGGER.error("Event is called");
-        //if (event.getFrom().equals(new ItemStack(ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse("balancedflight:basicring"))))) {
-        if (event.getTo().equals(ItemStack.EMPTY)) {
-            LOGGER.error("It works!");
+        if (event.getEntity() instanceof Player player) {
+            if (event.getFrom().getItem() instanceof BasicRingItem || event.getFrom().getItem() instanceof AscendedRingItem)
+                if (!(player.isSpectator() || player.isCreative())) {
+                    player.getAbilities().mayfly = false;
+                    player.getAbilities().flying = false;
+                    player.onUpdateAbilities();
+                }
         }
     }
 }

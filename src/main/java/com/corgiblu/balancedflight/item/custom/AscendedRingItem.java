@@ -1,9 +1,9 @@
 package com.corgiblu.balancedflight.item.custom;
 
 import com.corgiblu.balancedflight.config.BalancedFlightCommonConfig;
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -36,7 +36,12 @@ public class AscendedRingItem extends Item {
     }
 
     @Override
-    public boolean isFoil(ItemStack pStack) {
-        return super.isFoil(pStack);
+    public void inventoryTick(ItemStack pStack, Level pLevel, Entity pEntity, int pSlotId, boolean pIsSelected) {
+        super.inventoryTick(pStack, pLevel, pEntity, pSlotId, pIsSelected);
+
+        if (pEntity instanceof Player player) {
+            player.getAbilities().mayfly = true;
+        }
+
     }
 }
