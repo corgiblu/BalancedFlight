@@ -1,5 +1,6 @@
 package com.corgiblu.balancedflight.events;
 
+import com.corgiblu.balancedflight.FlightAPI;
 import com.corgiblu.balancedflight.item.custom.AscendedRingItem;
 import com.corgiblu.balancedflight.item.custom.BasicRingItem;
 import net.minecraft.world.entity.player.Player;
@@ -13,8 +14,7 @@ public class FlightDeactivation {
         if (event.getEntity() instanceof Player player) {
             if (event.getFrom().getItem() instanceof BasicRingItem || event.getFrom().getItem() instanceof AscendedRingItem)
                 if (!(player.isSpectator() || player.isCreative())) {
-                    player.getAbilities().mayfly = false;
-                    player.getAbilities().flying = false;
+                    FlightAPI.stopFlight(player);
                     player.onUpdateAbilities();
                 }
         }

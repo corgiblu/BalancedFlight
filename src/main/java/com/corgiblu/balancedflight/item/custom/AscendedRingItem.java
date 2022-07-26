@@ -14,7 +14,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class AscendedRingItem extends Item {
+public class AscendedRingItem extends AbstractRing {
     public AscendedRingItem(Properties pProperties) {
         super(pProperties);
     }
@@ -31,16 +31,6 @@ public class AscendedRingItem extends Item {
             pTooltipComponents.add(new TranslatableComponent("tooltip.balancedflight.ring.tooltip.creative"));
         } else if (BalancedFlightCommonConfig.ElytraAscended.get()) {
             pTooltipComponents.add(new TranslatableComponent("tooltip.balancedflight.ring.tooltip.elytra"));
-        }
-
-    }
-
-    @Override
-    public void inventoryTick(ItemStack pStack, Level pLevel, Entity pEntity, int pSlotId, boolean pIsSelected) {
-        super.inventoryTick(pStack, pLevel, pEntity, pSlotId, pIsSelected);
-
-        if (pEntity instanceof Player player) {
-            player.getAbilities().mayfly = true;
         }
 
     }
