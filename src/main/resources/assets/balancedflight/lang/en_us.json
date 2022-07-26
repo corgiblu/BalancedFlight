@@ -17,5 +17,7 @@
   "tooltip.balancedflight.ring.tooltip.elytra": "§7Allows enhanced Elytra flight.§r",
   "tooltip.balancedflight.basicring.tooltip.overworld": "§4Only works in the overworld.§r",
 
-  "tooltip.balancedflight.flightanchor.tooltip": "§7Allows flight in a %1$s §7block distance.§r"
+  "tooltip.balancedflight.flightanchor.tooltip": "§7Allows flight in a %1$s §7block distance.§r",
+
+  "curios.identifier.flight_ring": "Flight Ring"
 }

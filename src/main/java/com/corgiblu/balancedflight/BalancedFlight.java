@@ -2,6 +2,7 @@ package com.corgiblu.balancedflight;
 
 import com.corgiblu.balancedflight.block.ModBlocks;
 import com.corgiblu.balancedflight.config.BalancedFlightCommonConfig;
+import com.corgiblu.balancedflight.imc.IMCSender;
 import com.corgiblu.balancedflight.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
@@ -34,6 +35,8 @@ public class BalancedFlight
         MinecraftForge.EVENT_BUS.register(this);
 
         MinecraftForge.EVENT_BUS.register(new FlightDeactivation());
+
+        IMCSender.sendImc();
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BalancedFlightCommonConfig.SPEC, "balancedflight-common.toml");
     }
