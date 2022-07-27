@@ -9,5 +9,6 @@ public class FlightAPI {
     public static void stopFlight(Player player) {
         player.getAbilities().mayfly = false;
         player.getAbilities().flying = false;
+        player.onUpdateAbilities();
     }
 }
